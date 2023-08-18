@@ -23,7 +23,7 @@ Before using Python_Cloud_Flow, ensure that you have the following prerequisites
 - **Required Libraries:** Install the necessary Python libraries using the following command:
 
    ```
-   pip install google-api-python-client boto3 dropbox requests boxsdk tk
+   pip install google-api-python-client boto3 dropbox requests boxsdk tki
    ```
 
 ## Usage
