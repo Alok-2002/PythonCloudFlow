@@ -4,7 +4,8 @@
 Python_Cloud_Flow is a versatile Python script that empowers users to seamlessly upload files to various cloud storage services, including Google Drive, Dropbox, Box.com, pCloud, and Amazon S3. The script offers a modern graphical user interface (GUI) built using the `tkinter` library, making it convenient and user-friendly for both beginners and experienced users.
 
 ## PyCloudFlow ScreenShots
-![Screenshot 2023-08-20 230742](https://github.com/Alok-2002/PythonCloudFlow/assets/93814546/9ffcf1ea-d9ba-4c15-8d26-16195eb11e91)
+![image](https://github.com/Alok-2002/PythonCloudFlow/assets/93814546/05ca5b34-e653-4e7b-8fbd-f67581fd77f2)
+
 
 
 ## Features
