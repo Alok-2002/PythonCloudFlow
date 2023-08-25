@@ -270,20 +270,20 @@ text_fg = "#ECF0F1"
 browse_button = tk.Button(root, text="Browse Files", command=browse_files, font=button_font,bg=button_bg, fg=button_fg)
 browse_button.pack(pady=10)
 
-upload_button = tk.Button(root, text="Upload To Google Drive", command=upload_files_to_drive, font=button_font,bg=button_bg, fg=button_fg)
-upload_button.place(x=100, y=650)
+# upload_button = tk.Button(root, text="Upload To Google Drive", command=upload_files_to_drive, font=button_font,bg=button_bg, fg=button_fg)
+# upload_button.place(x=100, y=650)
 
-upload_dropbox_button = tk.Button(root, text="Upload To Dropbox", command=upload_files_to_dropbox, font=button_font,bg=button_bg, fg=button_fg)
-upload_dropbox_button.place(x=400, y=650)
+# upload_dropbox_button = tk.Button(root, text="Upload To Dropbox", command=upload_files_to_dropbox, font=button_font,bg=button_bg, fg=button_fg)
+# upload_dropbox_button.place(x=400, y=650)
 
-upload_box_button = tk.Button(root, text="Upload To Box.com", command=upload_files_to_box, font=button_font,bg=button_bg, fg=button_fg)
-upload_box_button.place(x=650, y=650)
+# upload_box_button = tk.Button(root, text="Upload To Box.com", command=upload_files_to_box, font=button_font,bg=button_bg, fg=button_fg)
+# upload_box_button.place(x=650, y=650)
 
-upload_pcloud_button = tk.Button(root, text="Upload To pCloud", command=upload_files_to_pcloud, font=button_font, bg=button_bg, fg=button_fg)
-upload_pcloud_button.place(x=920, y=650)
+# upload_pcloud_button = tk.Button(root, text="Upload To pCloud", command=upload_files_to_pcloud, font=button_font, bg=button_bg, fg=button_fg)
+# upload_pcloud_button.place(x=920, y=650)
 
-upload_s3_button = tk.Button(root, text="Upload to S3", command=upload_files_to_s3, font=button_font, bg=button_bg, fg=button_fg)
-upload_s3_button.place(x=1150, y=650)
+# upload_s3_button = tk.Button(root, text="Upload to S3", command=upload_files_to_s3, font=button_font, bg=button_bg, fg=button_fg)
+# upload_s3_button.place(x=1150, y=650)
 
 copyright_button = tk.Button(root, text="Copyright © Alok Shamra", font=text_font, borderwidth=0, command=open_github_profile, bg=text_bg, fg=text_fg, cursor="hand2")
 copyright_button.pack(side="bottom", anchor="se")
