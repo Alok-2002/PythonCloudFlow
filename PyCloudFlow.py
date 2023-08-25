@@ -6,6 +6,7 @@ from google_auth_oauthlib.flow import InstalledAppFlow
 from tkinter import messagebox
 import boto3
 import os
+import webbrowser
 import dropbox
 import requests
 from boxsdk import OAuth2, Client
@@ -205,6 +206,8 @@ def format_size(size):
     else:
         return f"{size:.2f} MB"
 
+def open_github_profile(event):
+    webbrowser.open_new("https://github.com/alok-2002")
 
 
 root = tk.Tk()  
@@ -225,6 +228,10 @@ button_font = ("Arial", 18)
 button_bg = "#3498DB" 
 button_fg = "#FFFFFF"
 
+text_font = ("Helvetica", 12)
+text_bg = "#34495E" 
+text_fg = "#ECF0F1"
+
 browse_button = tk.Button(root, text="Browse Files", command=browse_files, font=button_font,bg=button_bg, fg=button_fg)
 browse_button.pack(pady=10)
 
@@ -243,9 +250,9 @@ upload_pcloud_button.place(x=920, y=650)
 upload_s3_button = tk.Button(root, text="Upload to S3", command=upload_files_to_s3, font=button_font, bg=button_bg, fg=button_fg)
 upload_s3_button.place(x=1150, y=650)
 
-text_font = ("Helvetica", 12)
-text_bg = "#34495E" 
-text_fg = "#ECF0F1"
+copyright_button = tk.Button(root, text="Copyright © Alok Shamra", font=text_font, borderwidth=0, command=open_github_profile, bg=text_bg, fg=text_fg, cursor="hand2")
+copyright_button.pack(side="bottom", anchor="se")
+
 file_info = tk.Text(root, height=20, width=80, font=text_font,bg=text_bg, fg=text_fg)
 file_info.pack()
 
