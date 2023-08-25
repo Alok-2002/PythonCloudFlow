@@ -11,7 +11,6 @@ import dropbox
 import requests
 from boxsdk import OAuth2, Client
 
-
 DROPBOX_ACCESS_TOKEN = 'Your_Drop_box_Access_Token'
 
 SCOPES = ['https://www.googleapis.com/auth/drive.file']
@@ -26,6 +25,41 @@ drive_service = build('drive', 'v3', credentials=creds)
 
 selected_files = []
 
+def classify_and_upload(file_path):
+    file_size = os.path.getsize(file_path) / (1024 * 1024)  # Convert to MB
+    file_type = os.path.splitext(file_path)[-1][1:].lower()  # Get file extension without dot
+    
+    video_formats = ['3gp', 'avi', 'flv', 'mkv', 'mov', 'mp4', 'mpeg', 'mpg', 'wmv']
+    image_formats = ['jpg', 'jpeg', 'png', 'gif', 'bmp', 'tiff']
+
+    uploaded_to = ""
+
+    if file_size <= 2 and file_type in ['docx', 'txt', 'csv', 'xml']:
+        upload_to_drive(file_path)
+        uploaded_to = "Google Drive"
+    elif file_type in video_formats:
+        upload_to_pcloud(file_path)
+        uploaded_to = "pCloud"
+    elif file_size > 2 and file_type in ['txt', 'docx', 'csv', 'xml']:
+        upload_to_dropbox(file_path)
+        uploaded_to = "Dropbox"
+    elif file_type in image_formats:
+        upload_to_s3(file_path)
+        uploaded_to = "Amazon S3"
+    elif file_type in ['pdf', 'pptx']:
+        upload_to_box(file_path)
+        uploaded_to = "Box.com"
+    else:
+        print("File does not meet the criteria for uploading.")
+
+    if uploaded_to:
+        file_name = os.path.basename(file_path)
+        file_size_formatted = format_size(get_file_size(file_path))
+        message = f"The '{file_name}' of size {file_size_formatted} has been uploaded to {uploaded_to}."
+        messagebox.showinfo("Upload Successful", message)
+    else:
+        print("File does not meet the criteria for uploading.")
+
 def browse_files():
     global selected_files
     files = filedialog.askopenfilenames(title="Select Files", filetypes=(("All Files", "*.*"),))
@@ -37,9 +71,10 @@ def browse_files():
         
         for file_path in selected_files:
             file_name = os.path.basename(file_path)
-            file_type = file_name.split(".")[-1]
+            file_type = file_name.split(".")[-1].lower()
             file_size = format_size(get_file_size(file_path))
         
+            classify_and_upload(file_path)
             file_info.insert(tk.END, f"{file_name} - {file_type.upper()} - {file_size}\n")
         file_info.config(state=tk.DISABLED)
 
