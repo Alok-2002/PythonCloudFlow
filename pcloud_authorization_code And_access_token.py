@@ -1,27 +1,25 @@
 import requests
 
-""" Replace with your pCloud API credentials """
-client_id = 'pcloud_client'
-client_secret = 'pcloud_secret'
+# Replace with your pCloud API credentials
+client_id = 'your_pCloud_client_id'
+client_secret = 'your_pCloud_client_secret'
 
-""" Set up the OAuth 2.0 authorization URL"""
-
+# Set up the OAuth 2.0 authorization URL
 auth_url = 'https://my.pcloud.com/oauth2/authorize'
-redirect_uri = 'https://localhost'  """ Placeholder URL for desktop/mobile apps """
+redirect_uri = 'https://localhost'  # Placeholder URL for desktop/mobile apps
 
-""" Generate the authorization URL """
+# Generate the authorization URL
 authorize_url = f"{auth_url}?response_type=code&client_id={client_id}&redirect_uri={redirect_uri}"
 
-""" Print the URL and visit it in a web browser """
-
+# Print the URL and visit it in a web browser
 print("Visit the following URL and grant authorization:")
 print(authorize_url)
 
-""" After granting authorization you will receive an authorization code """
+# After granting authorization, you'll receive an authorization code
 
-""" Use the authorization code to get the access token """
+# Use the authorization code to get the access token
 token_url = 'https://api.pcloud.com/oauth2_token'
-authorization_code = 'authorization_code'  """ Replace with the received authorization code """
+authorization_code = 'your_authorization_code'  # Replace with the received authorization code
 
 token_data = {
     'client_id': client_id,
