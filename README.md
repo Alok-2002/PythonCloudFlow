@@ -1,19 +1,19 @@
-
 # Python_Cloud_Flow
 
 Python_Cloud_Flow is a versatile Python script that empowers users to seamlessly upload files to various cloud storage services, including Google Drive, Dropbox, Box.com, pCloud, and Amazon S3. The script offers a modern graphical user interface (GUI) built using the `tkinter` library, making it convenient and user-friendly for both beginners and experienced users.
 
-## PyCloudFlow ScreenShots
-![image](https://github.com/Alok-2002/PythonCloudFlow/assets/93814546/05ca5b34-e653-4e7b-8fbd-f67581fd77f2)
+
+## PyCloudFlow 
+![Screenshot 2023-08-23 151919](https://github.com/Alok-2002/PythonCloudFlow/assets/93814546/a11e9cea-b8b3-4316-b7b6-b1d8d0d1ee1d)
 
 
-## PyCloudFLow Automated 
-![image](https://github.com/Alok-2002/PythonCloudFlow/assets/93814546/8b50cc28-f72e-4e1e-a0fd-c2d1101a5e7f)
-
+## PyCloudFlow Automated
+![Automated](https://github.com/Alok-2002/PythonCloudFlow/assets/93814546/5d506e49-c057-4640-8ddc-e9f2c87cb6e8)
 
 
 ## Features
 
+- **Fully Automatic:** Python_Cloud_Flow is now a fully automatic application. Users only need to select files, and the program automatically applies file classification and uploads the files to the appropriate cloud service.
 - **Multi-Cloud Support:** Upload files to a variety of popular cloud storage platforms from a single interface.
 - **Interactive GUI:** The script offers an interactive GUI that simplifies the process of selecting and uploading files.
 - **Real-Time Feedback:** Monitor the upload progress and receive instant feedback on uploaded file details.
@@ -35,7 +35,7 @@ Before using Python_Cloud_Flow, ensure that you have the following prerequisites
 1. **Clone the Repository:**
 
    ```bash
-   git clone https://github.com/alok-2002/Python_Cloud_Flow.git
+   git clone https://github.com/Alok-2002/Python_Cloud_Flow.git
    cd Python_Cloud_Flow
    ```
 
@@ -52,8 +52,8 @@ Before using Python_Cloud_Flow, ensure that you have the following prerequisites
 4. **Using the GUI:**
 
    - Browse and select files for upload.
-   - Choose the desired cloud service.
-   - Click the corresponding "Upload" button to initiate the upload process.
+   - The automatic classification process will determine the appropriate cloud service based on the file's characteristics.
+   - The upload process will be initiated automatically based on the classification.
    - Monitor the GUI for real-time feedback on uploaded files.
 
 ## Advanced Configuration
@@ -70,9 +70,11 @@ Before using Python_Cloud_Flow, ensure that you have the following prerequisites
 
 ## Contributions
 
-Contributions to this project are highly encouraged. If you encounter issues, have suggestions, or want to add new features, please open an issue or submit a pull request.
+Contributions to this project are highly encouraged. If you encounter issues, have suggestions, or want to add new features, (please open an issue)[https://github.com/Alok-2002/PythonCloudFlow/issues/new] or submit a pull request.
+
+## Copyright
+This project is the original work of [Alok Sharma](https://github.com/Alok-2002) If you use or modify this project, you are required to give proper credit by providing a link to the original repository.
 
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
