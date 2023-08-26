@@ -70,7 +70,7 @@ Before using Python_Cloud_Flow, ensure that you have the following prerequisites
 
 ## Contributions
 
-Contributions to this project are highly encouraged. If you encounter issues, have suggestions, or want to add new features, (please open an issue)[https://github.com/Alok-2002/PythonCloudFlow/issues/new] or submit a pull request.
+Contributions to this project are highly encouraged. If you encounter issues, have suggestions, or want to add new features, [please open an issue](https://github.com/Alok-2002/PythonCloudFlow/issues/new) or submit a pull request.
 
 ## Copyright
 This project is the original work of [Alok Sharma](https://github.com/Alok-2002) If you use or modify this project, you are required to give proper credit by providing a link to the original repository.
