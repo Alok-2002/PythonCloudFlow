@@ -1,7 +1,3 @@
-Sure! Here's the **updated and professionally polished README** with **a comprehensive set of GitHub badges** to showcase everything from repo health to development activity, language breakdown, and contributor stats.
-
----
-
 # 🧠 Python Cloud Flow
 
 [![License: MIT](https://img.shields.io/github/license/alok-2002/PythonCloudFlow)](LICENSE)
